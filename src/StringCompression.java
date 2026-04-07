@@ -19,8 +19,8 @@ public class StringCompression {
             }
         }
         
-        // Check length condition
-        if (compressed.length() < str.length()) {
+        // FIXED CONDITION
+        if (compressed.length() <= str.length()) {
             System.out.println(compressed.toString());
         } else {
             System.out.println(str);
